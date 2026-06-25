@@ -12,7 +12,7 @@ export function Pena() {
         copy="Una ronda abierta con pinceladas de color, donde el arte se hace encuentro entre danzas y cantores."
         video="2025/11/Portada_1_1.mp4"
       />
-      <section className="narrative narrow">
+      <section className="narrative narrow narrative-brush narrative-fire">
         <p>Es un refugio donde entre cuadros y coplas se cruzan miradas que crean. Un fogón que no apaga su llama, un rincón donde caben todas las voces.</p>
         <p>Aquí no hay escenario, hay abrazo. No hay espectadores, hay comunidad.</p>
       </section>

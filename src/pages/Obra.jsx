@@ -16,7 +16,7 @@ export function Obra({ obra }) {
         video={video}
       />
       <section className="obra-layout">
-        <div className="narrative">
+        <div className="narrative narrative-brush narrative-obra">
           {obra.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
         <aside>

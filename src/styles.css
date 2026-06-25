@@ -520,6 +520,100 @@ footer {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
 }
 
+.narrative-brush {
+  position: relative;
+  isolation: isolate;
+  padding: 58px clamp(26px, 6vw, 76px);
+  color: var(--muted);
+}
+
+.narrative-brush::before,
+.narrative-brush::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.narrative-brush::before {
+  z-index: -2;
+  inset: 24px -18px 18px -18px;
+  background:
+    linear-gradient(92deg, transparent 0 6%, rgba(214, 166, 90, 0.12) 8% 28%, transparent 32% 38%, rgba(159, 77, 49, 0.1) 43% 63%, transparent 68% 74%, rgba(94, 121, 99, 0.09) 78% 94%, transparent 98%),
+    repeating-linear-gradient(181deg, transparent 0 10px, rgba(248, 239, 230, 0.025) 11px 13px, transparent 14px 26px);
+  clip-path: polygon(1% 35%, 10% 24%, 20% 31%, 31% 20%, 42% 29%, 53% 21%, 66% 33%, 78% 24%, 90% 32%, 100% 27%, 96% 64%, 85% 72%, 73% 63%, 61% 78%, 49% 66%, 36% 76%, 23% 65%, 11% 74%, 2% 61%);
+  transform: rotate(-0.7deg) skewX(-2deg);
+  opacity: 0.96;
+}
+
+.narrative-brush::after {
+  z-index: -1;
+  inset: 34px 5% 28px 5%;
+  background:
+    linear-gradient(88deg, transparent 0 4%, rgba(20, 17, 15, 0.38) 8% 91%, transparent 96%),
+    radial-gradient(ellipse at 50% 52%, rgba(20, 17, 15, 0.2), transparent 72%);
+  clip-path: polygon(0 28%, 12% 19%, 25% 25%, 36% 15%, 48% 22%, 62% 14%, 74% 25%, 88% 18%, 100% 31%, 95% 74%, 83% 67%, 70% 78%, 57% 70%, 42% 82%, 29% 71%, 16% 81%, 4% 68%);
+  transform: rotate(0.45deg);
+}
+
+.narrative-brush p {
+  position: relative;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.narrative-brush p + p {
+  margin-top: 18px;
+}
+
+.narrative-stage::before {
+  background:
+    linear-gradient(94deg, transparent 0 5%, rgba(94, 121, 99, 0.12) 8% 25%, transparent 30% 36%, rgba(214, 166, 90, 0.13) 39% 60%, transparent 65% 72%, rgba(68, 49, 42, 0.18) 76% 94%, transparent 98%),
+    repeating-linear-gradient(180deg, transparent 0 11px, rgba(248, 239, 230, 0.025) 12px 14px, transparent 15px 25px);
+}
+
+.narrative-stage::after {
+  background:
+    linear-gradient(88deg, transparent 0 5%, rgba(13, 11, 10, 0.46) 9% 90%, transparent 96%),
+    radial-gradient(ellipse at 32% 52%, rgba(214, 166, 90, 0.08), transparent 54%);
+}
+
+.narrative-earth::before {
+  background:
+    linear-gradient(90deg, transparent 0 4%, rgba(159, 77, 49, 0.15) 8% 30%, transparent 35% 41%, rgba(214, 166, 90, 0.13) 45% 65%, transparent 70% 75%, rgba(94, 121, 99, 0.16) 78% 95%, transparent 98%),
+    repeating-linear-gradient(177deg, transparent 0 12px, rgba(214, 166, 90, 0.03) 13px 16px, transparent 17px 28px);
+}
+
+.narrative-earth::after {
+  transform: rotate(-0.35deg);
+}
+
+.narrative-fire::before {
+  background:
+    linear-gradient(92deg, transparent 0 5%, rgba(159, 77, 49, 0.18) 8% 24%, transparent 29% 34%, rgba(214, 166, 90, 0.16) 39% 58%, transparent 63% 70%, rgba(112, 84, 49, 0.15) 74% 93%, transparent 97%),
+    radial-gradient(ellipse at 50% 60%, rgba(159, 77, 49, 0.14), transparent 68%);
+}
+
+.narrative-fire::after {
+  background:
+    linear-gradient(88deg, transparent 0 5%, rgba(20, 11, 8, 0.42) 9% 90%, transparent 96%),
+    radial-gradient(ellipse at 62% 52%, rgba(214, 166, 90, 0.1), transparent 48%);
+  transform: rotate(0.9deg);
+}
+
+.narrative-obra {
+  padding: 44px clamp(22px, 4vw, 48px);
+}
+
+.narrative-obra::before {
+  inset: 16px -10px 12px -10px;
+  opacity: 0.72;
+}
+
+.narrative-obra::after {
+  inset: 24px 4% 22px 4%;
+  opacity: 0.72;
+}
+
 .work-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }

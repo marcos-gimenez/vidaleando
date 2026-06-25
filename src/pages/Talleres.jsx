@@ -18,7 +18,7 @@ export function Talleres() {
           '2025/11/08-talleres-danza.webp'
         ]}
       />
-      <section className="narrow narrative">
+      <section className="narrow narrative narrative-brush narrative-earth">
         <p>Ofrecemos talleres de danzas folklóricas tradicionales argentinas, donde el cuerpo aprende desde la historia, el ritmo y el alma.</p>
       </section>
       <section className="lesson-grid">

@@ -17,7 +17,7 @@ export function DanzaTeatro({ go }) {
           '2025/09/portada-danzateatro-05.webp'
         ]}
       />
-      <section className="narrative narrow">
+      <section className="narrative narrow narrative-brush narrative-stage">
         <p>Tejemos escenarios con el pulso del folklore vivo, con la nostalgia de la vidala y la urgencia de un presente que respira.</p>
         <p>Danza y teatro se conjugan en nuestro andar: Vida Le Ando es andar amando, bailar habitando y volvernos ronda, encuentro, ritual, obras.</p>
       </section>
