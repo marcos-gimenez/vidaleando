@@ -9,7 +9,7 @@ export function DanzaTeatro({ go }) {
       <Hero
         title="Danza Teatro"
         eyebrow="Bailamos historias"
-        copy="Andamos la vida con el cuerpo y con la voz. Somos raíz que habla, memoria en movimiento y folklore vivo."
+        copy="Andamos la vida con el cuerpo y con la voz. Somos raíz que habla, somos memoria en movimiento."
         media={[
           '2025/09/portada-danzateatro-07.webp',
           '2025/09/portada-danzateatro-03.webp',
@@ -18,8 +18,8 @@ export function DanzaTeatro({ go }) {
         ]}
       />
       <section className="narrative narrow narrative-brush narrative-stage">
-        <p>Tejemos escenarios con el pulso del folklore vivo, con la nostalgia de la vidala y la urgencia de un presente que respira.</p>
-        <p>Danza y teatro se conjugan en nuestro andar: Vida Le Ando es andar amando, bailar habitando y volvernos ronda, encuentro, ritual, obras.</p>
+        <p>Tejemos escenarios con el pulso del FOLKLORE VIVO, con la nostalgia de la vidala y la urgencia de un presente que respira, que VIVE.</p>
+        <p>Danza y teatro se conjugan en nuestro andar. VIDA LE ANDO es andar amando, bailar habitando, decimos con el cuerpo lo que el ALMA nos recuerda y nos volvemos ronda, encuentro, ritual, obras.</p>
       </section>
       <section className="work-grid">
         {danzaWorks.map(([title, subtitle, image, href]) => (

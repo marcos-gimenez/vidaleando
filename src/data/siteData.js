@@ -9,8 +9,8 @@ export const nav = [
 ]
 
 export const socials = {
-  danzaWa: 'https://wa.me/5492477641312',
-  danzaWa2: 'https://wa.me/5492477619321',
+  danzaWa: 'https://wa.me/5493364193864',
+  danzaWa2: 'https://wa.me/5493364355524',
   penaWa: 'https://wa.me/5492477419212',
   danzaIg: 'https://www.instagram.com/vidaleando',
   penaIg: 'https://www.instagram.com/penadeamigxs'
@@ -40,8 +40,8 @@ export const homeFeatures = [
 export const danzaWorks = [
   ['Anónimas', 'Primera Función', '2025/11/49-anonimas.webp', '/anonimas'],
   ['Anónimas', 'Segunda Función', '2025/11/25-anonimas_2.webp', '/anonimas-segunda-funcion'],
-  ['La Pausa', 'Memoria, nostalgia y cuerpo en escena', '2025/08/Obra-La-Pausa-07-1-1.webp', '/la-pausa'],
-  ["Ñat'i", 'Una vidala encarnada desde lo más profundo', '2025/07/IMG_0816.jpg', '/nati']
+  ['La Pausa', '', '2025/08/Obra-La-Pausa-07-1-1.webp', '/la-pausa'],
+  ["Ñat'i", '', '2025/07/IMG_0816.jpg', '/nati']
 ]
 
 export const talleres = [
@@ -71,12 +71,13 @@ export const tallerGallery = [
   '2025/11/21-talleres-danza.webp'
 ]
 
+// Tercer valor de cada edicion: pegá hasta dos links de YouTube Shorts.
 export const penaEditions = [
-  ['Circo Criollo - Raly Barrionuevo', ['Raly Barrionuevo', 'Juan Manuel Martinez', 'Felipe Bornis', 'La volada', 'Pareja de Danza: Sergio Strubia, Camila Cabrera', 'Cuerpo Municipal de Danzas de Pergamino']],
-  ['Patio Santiagueño - Peteco y Demi Carabajal', ['Peteco Carabajal', 'Demi Carabajal', 'Facu Troilo', 'Tomi Vazquez', 'Por Unas Pocas Monedas', 'Ballet Arte & Estilo']],
-  ['Ritual Salamanquero - El Vislumbre del Esteko', ['El Vislumbre del Esteko', 'Vermu Folk', 'Facu Troilo', 'Grupo De Danzas El Ombú', 'Feli Bornis', 'Vidaleando', 'Bombonautas']],
-  ['Peña en el Campo De Tito', ['Leo Sanabria', 'Juan Manuel Martinez', 'Fernando Basanta', 'Patricio Bucas', 'Ulises Sanabria', 'Omar Navarro']],
-  ['Peña Dominguera - José Luis Aguirre', ['José Luis Aguirre', 'Leo Sanabria', 'Ulises Sanabria', 'Grupo De Danzas El Ombú', 'Bombonautas', 'Facu Troilo']]
+  ['Circo Criollo - Raly Barrionuevo', ['Raly Barrionuevo', 'Juan Manuel Martinez', 'Felipe Bornis', 'La volada', 'Pareja de Danza: Sergio Strubia, Camila Cabrera', 'Cuerpo Municipal de Danzas de Pergamino. Dirigido por Pedro Marlo'], ['https://www.youtube.com/shorts/G-6b_1G0TnQ', 'https://www.youtube.com/shorts/3ft9ke-QHTA']],
+  ['Patio Santiagueño - Peteco y Demi Carabajal', ['Peteco Carabajal', 'Demi Carabajal', 'Facu Troilo', 'Tomi Vazquez', 'Por Unas Pocas Monedas', 'Ballet Arte & Estilo', 'Grupo de Danzas El Ombú'], ['https://www.youtube.com/shorts/PzDWB5mcnaw']],
+  ['Ritual Salamanquero - El Vislumbre del Esteko', ['El Vislumbre del Esteko', 'Vermu Folk', 'Facu Troilo', 'Grupo De Danzas El Ombú', 'Feli Bornis', 'Vidaleando', 'Bombonautas'], ['https://www.youtube.com/shorts/L4EM19YgaU4']],
+  ['Peña en el Campo De Tito', ['Leo Sanabria', 'Juan Manuel Martinez', 'Fernando Basanta', 'Patricio Bucas', 'Ulises Sanabria', 'Omar Navarro', 'Grupo de Danzas El Ombú'], ['https://www.youtube.com/shorts/_996hOmb8T4']],
+  ['Peña Dominguera - José Luis Aguirre', ['José Luis Aguirre', 'Leo Sanabria', 'Ulises Sanabria', 'Grupo De Danzas El Ombú', 'Bombonautas', 'Facu Troilo'], ['https://www.youtube.com/shorts/Sh-qIIzSPH4']]
 ]
 
 export const products = [
@@ -145,35 +146,41 @@ export const obras = {
     quote: 'Hay una poesía que nace desde las entrañas, del grito más hondo y menos solo',
     body: [
       "Ñat'i es un susurro antiguo, una vidala encarnada. Es memoria, es grito que nace del vientre, es danza que resiste al olvido.",
-      'Es lo que no se dice pero se baila, lo que aún sigue latiendo desde lo más profundo.'
+      'Ñati es lo que no se dice pero se baila, es lo que aún sigue latiendo desde lo más profundo.'
     ],
     credits: [
       'Obra: Ñat’i',
       'Dirección y producción general: Yamila Aguilar',
       'Asistencia de dirección: Jorgelina Sceusa',
       'Coreografía: Yamila Aguilar',
-      'Música en vivo: Juan Manuel Martinez y Juan Cruz Martinez'
+      'Elenco: – Jorgelina Sceusa – Agustina Lacoume – Leila Giménez – María Benítez – Morena Carabajal – Paz González',
+      'Música en vivo: Juan Manuel Martinez (Guitarra y voz) – Juan Cruz Martinez (Percusión) – José Diaz (Aerófonos) – Lucas Cuevas (Teclado) – Facundo Bernal (Músico invitado)',
+      'Diseño técnico y escenográfico: Ramiro García Laplaza (Iluminación) – Luisina Nardone (Fotografía) – Yamila Aguilar y Jorgelina Sceusa (Vestuario y escenografía)'
     ],
     media: obraImages.nati
   },
   '/la-pausa': {
     title: 'La Pausa',
-    quote: 'El sublime instante en el que el tiempo se detiene y volvemos en recuerdos a transitar el camino',
+    quote: 'El sublime instante en el que el tiempo se detiene y volvemos en recuerdos a transitar el camino, lo que fue, lo que somos y lo que ya no seremos',
     body: [
-      'La Pausa es un instante suspendido, una grieta por donde se cuela la memoria.',
-      'Es reflejo y nostalgia; silencio que habla sin palabras y cuerpo en quietud lleno de danzas viejas que aún respiran.'
+      'La Pausa es un instante suspendido, es grieta por donde se cuela la memoria.',
+      'Es reflejo y nostalgia, es espejo que no devuelve una imagen, sino la vida entera.',
+      'Es silencio que habla sin palabras es voz que nace en las entrañas, es cuerpo en quietud pero lleno de danzas viejas que aún respiran, es la ternura de lo vivido, la nostalgia profunda de lo que ya no está pero que aún permanece.'
     ],
     credits: [
       'Obra: La Pausa',
       'Dirección y producción general: Yamila Aguilar',
       'Asistencia de dirección: Melina Murri',
-      'Coreografía: Yamila Aguilar'
+      'Coreografía: Yamila Aguilar',
+      'Elenco: Jorgelina Sceusa – Agustina Lacoume – Leila Giménez – María Benítez – Melina Murri – Sofía Carballido – Esmeralda Bazán – Sol Zacutti – Vanina Gonzalez – Yamila Aguilar',
+      'Música en vivo: Juan Manuel Martinez (Guitarra y voz) – Mai Etchaniz (Voz) – Juan Cruz Martinez (Percusión) – Lucas Cuevas (Guitarra)',
+      'Diseño técnico y escenográfico: Ramiro García Laplaza (Iluminación) – Alfredo Rivero (Fotografía) – Yamila Aguilar (Vestuario y escenografía)'
     ],
     media: obraImages.pausa
   },
   '/anonimas': {
     title: 'Anónimas',
-    quote: 'Historias de mujeres valientes y trabajadoras cobran vida a través de movimiento poético, danza y música en vivo',
+    quote: 'Historias de Mujeres valientes y trabajadoras cobran vida a través de movimientos poéticos, danza, musica en vivo, textos…',
     body: [
       'Exploramos el arduo trabajo de aquellas que, a menudo, permanecen en la sombra.',
       'La escena abre memoria, oficio y comunidad para volver visible lo que sostiene la vida cotidiana.'
@@ -183,7 +190,10 @@ export const obras = {
       'Dirección y producción general: Yamila Aguilar',
       'Asistencia de dirección: Melina Murri',
       'Coreografía: Yamila Aguilar',
-      'Actriz: Jorgelina Sceusa'
+      'Actriz: Jorgelina Sceusa',
+      'Elenco: Melina Murri – Agustina Lacoume – Leila Giménez – Aldana Pintos – Marian Barcella – Agustina Geloso – Lu Morello - Lujan Iñiguez – Cintia Iomi – Andrea Mansilla – Graciela Mostafa – Mariangel Gasparini – Mirna Gonzalez – Elsa Wendt – Patricia Cejas',
+      'Música en vivo: Juan Manuel Martinez (Guitarra y voz) – Federico Camargo (Percusión) – Lucas Cuevas (Guitarra) – Marcos Giménez (Bandoneón)',
+      'Diseño técnico y escenográfico: Ramiro García Laplaza (Iluminación) – Diego Nucera (Fotografía) – Yamila Aguilar (Vestuario y escenografía)'
     ],
     media: obraImages.anonimas
   },
@@ -198,7 +208,13 @@ export const obras = {
       'Obra: Anónimas',
       'Dirección y producción general: Yamila Aguilar',
       'Asistencia de dirección: Melina Murri',
-      'Coreografía: Yamila Aguilar'
+      'Coreografía: Yamila Aguilar',
+      'Actriz: Jorgelina Sceusa',
+      'Elenco: Melina Murri – Agustina Lacoume – Leila Giménez – Aldana Pintos – Marian Barcella – Agustina Geloso – Lu Morello - Lujan Iñiguez – Cintia Iomi – Andrea Mansilla – Graciela Mostafa – Mariangel Gasparini – Mirna Gonzalez – Elsa Wendt – Patricia Cejas',
+      'Música en vivo: Javier Caminos (Guitarra y voz) - Juan Manuel Martinez (Guitarra y voz) – Juan Cruz Martinez (Percusión) – Marcos Giménez (Bandoneón)',
+      'Diseño técnico y escenográfico: Ramiro García Laplaza (Iluminación) – Diego Nucera (Fotografía) – Yamila Aguilar (Vestuario y escenografía)',
+      'Músicxs invitados: TIERRA NEGRA',
+      'Pintura a cargo de: Lu Morello'
     ],
     media: obraImages.anonimas2
   }

@@ -44,7 +44,11 @@ export function Hero({ title, eyebrow, copy, media, video }) {
             controls={false}
             onCanPlay={() => videoRef.current?.play().catch(() => {})}
           />
-          <button className="audio-toggle" onClick={toggleAudio} aria-label={muted ? 'Activar audio' : 'Silenciar audio'}>
+          <button
+            className="audio-toggle"
+            onClick={toggleAudio}
+            aria-label={muted ? 'Activar audio' : 'Silenciar audio'}
+          >
             {muted ? <SpeakerOffIcon /> : <SpeakerIcon />}
           </button>
         </>

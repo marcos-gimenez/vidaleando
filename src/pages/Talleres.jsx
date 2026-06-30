@@ -30,7 +30,7 @@ export function Talleres() {
             <strong>Duración: {duration}</strong>
             <div className="actions">
               <a className="button" href={asset(pdf)} target="_blank">Descargá ficha</a>
-              <a className="button ghost" href={socials.danzaWa}>Contacto</a>
+              <a className="button ghost" href={socials.danzaWa2} target="_blank">Contacto</a>
             </div>
           </article>
         ))}

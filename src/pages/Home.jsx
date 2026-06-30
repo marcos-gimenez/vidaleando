@@ -10,7 +10,7 @@ export function Home({ go }) {
       <Hero
         title="Folklore en Movimiento"
         eyebrow="Vida Le Ando"
-        copy="Moverse con el pulso de la vida y el alma de la vidala. Andar caminos con arte, memoria y cuerpo."
+        copy="‘Vida Le Ando’ es moverse con el pulso de la vida y el alma de la vidala. Es andar caminos con ARTE, memoria y cuerpo."
         media={[
           '2025/11/16-anonimas_2.webp',
           '2025/09/Ensayo02.jpeg',
@@ -30,7 +30,7 @@ export function Home({ go }) {
         <div>
           <p className="eyebrow">Apoyan nuestro movimiento de Arte Independiente</p>
           <h2>Querés apoyar y formar parte de esta familia?</h2>
-          <a className="button" href={socials.danzaWa}>Contactate Ahora</a>
+          <a className="button" href={socials.danzaWa} target="_blank">Contactate Ahora</a>
         </div>
         <div className="sponsors">
           <img src={asset('2025/12/Patrocinio-1.webp')} alt="Patrocinio" />
