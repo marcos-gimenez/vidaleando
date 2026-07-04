@@ -13,7 +13,7 @@ export const socials = {
   danzaWa2: 'https://wa.me/5493364355524',
   penaWa: 'https://wa.me/5492477419212',
   danzaIg: 'https://www.instagram.com/vidaleando',
-  penaIg: 'https://www.instagram.com/penadeamigxs'
+  penaIg: 'https://www.instagram.com/cantinadeamigxs'
 }
 
 export const homeFeatures = [
