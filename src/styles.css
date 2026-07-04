@@ -857,11 +857,25 @@ body.modal-open {
   margin: -26px -26px 20px;
 }
 
+.product-image-button {
+  padding: 0;
+  border: 0;
+  background: #eee;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
 .product-images img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   background: #eee;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.product-image-button:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.06);
 }
 
 .product strong {
@@ -874,6 +888,25 @@ body.modal-open {
 .product .button {
   margin-top: 12px;
   width: 100%;
+}
+
+.product-modal-figure {
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+}
+
+.product-modal-figure img {
+  max-width: min(920px, 88vw);
+  max-height: 82vh;
+}
+
+.product-modal-figure figcaption {
+  color: var(--text);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  text-align: center;
 }
 
 .obra-layout {
