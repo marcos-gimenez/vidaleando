@@ -4,16 +4,26 @@ import { asset } from '../utils/assets'
 export function Hero({ title, eyebrow, copy, media, video }) {
   const slides = Array.isArray(media) ? media : media ? [media] : []
   const [slide, setSlide] = useState(0)
+  const [previousSlide, setPreviousSlide] = useState(null)
   const [muted, setMuted] = useState(true)
   const videoRef = useRef(null)
 
   useEffect(() => {
     if (video || slides.length < 2) return undefined
     const id = window.setInterval(() => {
-      setSlide((current) => (current + 1) % slides.length)
+      setSlide((current) => {
+        setPreviousSlide(current)
+        return (current + 1) % slides.length
+      })
     }, 4200)
     return () => window.clearInterval(id)
   }, [video, slides.length])
+
+  useEffect(() => {
+    if (video || slides.length < 2) return
+    const nextImage = new Image()
+    nextImage.src = asset(slides[(slide + 1) % slides.length])
+  }, [slide, slides, video])
 
   const toggleAudio = async () => {
     const nextMuted = !muted
@@ -54,9 +64,19 @@ export function Hero({ title, eyebrow, copy, media, video }) {
         </>
       ) : (
         <div className="hero-carousel" aria-hidden="true">
-          {slides.map((item, index) => (
-            <img className={index === slide ? 'active' : ''} key={item} src={asset(item)} alt="" />
-          ))}
+          {[...new Set([previousSlide, slide].filter((index) => index !== null))].map((index) => {
+            const item = slides[index]
+            return (
+              <img
+                className={index === slide ? 'active' : ''}
+                key={item}
+                src={asset(item)}
+                alt=""
+                decoding="async"
+                fetchPriority={index === 0 ? 'high' : 'auto'}
+              />
+            )
+          })}
         </div>
       )}
       <div className="hero-shade"></div>

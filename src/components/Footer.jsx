@@ -5,7 +5,7 @@ import { asset } from '../utils/assets'
 function ContactLink({ href, icon, children }) {
   return (
     <a className="footer-link" href={href} target="_blank" rel="noopener noreferrer">
-      <img src={asset(icon)} alt="" />
+      <img src={asset(icon)} alt="" loading="lazy" decoding="async" />
       <span>{children}</span>
     </a>
   )
@@ -15,7 +15,7 @@ export function Footer() {
   return (
     <footer>
       <div>
-        <img className="footer-logo" src={asset('2025/07/logo-20.png')} alt="Vida Le Ando" />
+        <img className="footer-logo" src={asset('2025/07/logo-20.png')} alt="Vida Le Ando" loading="lazy" decoding="async" />
         <p>FOLKLORE EN MOVIMIENTO</p>
       </div>
       <div>
@@ -36,8 +36,8 @@ export function Footer() {
 
 export function WhatsAppFloat() {
   return (
-    <a className="wa-float" href={socials.danzaWa} target="_blank" aria-label="WhatsApp">
-      <img src={asset('2025/08/WhatsApp.png')} alt="" />
+    <a className="wa-float" href={socials.danzaWa} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <img src={asset('2025/08/WhatsApp.png')} alt="" decoding="async" />
     </a>
   )
 }

@@ -261,6 +261,13 @@ section {
   padding: 82px 0;
 }
 
+.page-loading {
+  min-height: 450px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+
 .narrow {
   width: min(820px, calc(100% - 36px));
 }

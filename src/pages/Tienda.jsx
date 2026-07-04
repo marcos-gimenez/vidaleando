@@ -61,7 +61,7 @@ export function Tienda() {
                   onClick={() => setModalProduct({ name, images: [front, back], index })}
                   aria-label={`Ver ${index === 0 ? name : `${name} reverso`}`}
                 >
-                  <img src={asset(image)} alt={index === 0 ? name : `${name} reverso`} />
+                  <img src={asset(image)} alt={index === 0 ? name : `${name} reverso`} loading="lazy" decoding="async" />
                 </button>
               ))}
             </div>
@@ -77,7 +77,7 @@ export function Tienda() {
           <button className="modal-close" onClick={() => setModalProduct(null)} aria-label="Cerrar imagen">×</button>
           <button className="modal-arrow modal-arrow-prev" onClick={(event) => { event.stopPropagation(); showPrevious() }} aria-label="Imagen anterior">‹</button>
           <figure className="product-modal-figure" onClick={(event) => event.stopPropagation()}>
-            <img src={asset(selectedImage)} alt={modalProduct.name} />
+            <img src={asset(selectedImage)} alt={modalProduct.name} decoding="async" />
             <figcaption>{modalProduct.name}</figcaption>
           </figure>
           <button className="modal-arrow modal-arrow-next" onClick={(event) => { event.stopPropagation(); showNext() }} aria-label="Imagen siguiente">›</button>

@@ -33,9 +33,9 @@ export function Gallery({ title, media }) {
     <section className="gallery-section">
       <h2>{title}</h2>
       <div className="gallery">
-        {media.map((item) => (
-          <button className="gallery-item" key={item} onClick={() => setSelectedIndex(media.indexOf(item))} aria-label="Ampliar imagen">
-            <img src={asset(item)} alt="" loading="lazy" />
+        {media.map((item, index) => (
+          <button className="gallery-item" key={item} onClick={() => setSelectedIndex(index)} aria-label="Ampliar imagen">
+            <img src={asset(item)} alt="" loading="lazy" decoding="async" />
           </button>
         ))}
       </div>
@@ -45,7 +45,7 @@ export function Gallery({ title, media }) {
           {hasManyImages && (
             <button className="modal-arrow modal-arrow-prev" onClick={(event) => { event.stopPropagation(); showPrevious() }} aria-label="Imagen anterior">‹</button>
           )}
-          <img src={asset(selectedImage)} alt="" onClick={(event) => event.stopPropagation()} />
+          <img src={asset(selectedImage)} alt="" decoding="async" onClick={(event) => event.stopPropagation()} />
           {hasManyImages && (
             <button className="modal-arrow modal-arrow-next" onClick={(event) => { event.stopPropagation(); showNext() }} aria-label="Imagen siguiente">›</button>
           )}

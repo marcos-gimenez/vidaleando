@@ -39,6 +39,7 @@ export function Pena() {
                       key={`${title}-short-${index}`}
                       src={embedUrl}
                       title={`${title} - Short ${index + 1}`}
+                      loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                     ></iframe>
