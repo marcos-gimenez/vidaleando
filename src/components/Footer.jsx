@@ -4,7 +4,7 @@ import { asset } from '../utils/assets'
 
 function ContactLink({ href, icon, children }) {
   return (
-    <a className="footer-link" href={href}>
+    <a className="footer-link" href={href} target="_blank" rel="noopener noreferrer">
       <img src={asset(icon)} alt="" />
       <span>{children}</span>
     </a>
@@ -20,7 +20,7 @@ export function Footer() {
       </div>
       <div>
         <h3>Contacto Danza</h3>
-        <ContactLink href={socials.danzaWa} con="2025/08/WhatsApp.png" target="_blank">Yamila Aguilar</ContactLink>
+        <ContactLink href={socials.danzaWa} icon="2025/08/WhatsApp.png" target="_blank">Yamila Aguilar</ContactLink>
         <ContactLink href={socials.danzaWa2} icon="2025/08/WhatsApp.png" target="_blank">Melina Murri</ContactLink>
         <ContactLink href={socials.danzaIg} icon="2025/11/instagram.png" target="_blank">Vida Le Ando</ContactLink>
       </div>
