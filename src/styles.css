@@ -379,6 +379,7 @@ section {
 
 .feature img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   transition: transform 520ms ease, filter 520ms ease;
@@ -517,6 +518,8 @@ footer {
 
 .sponsors img,
 .contact-band img {
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
 }
@@ -705,6 +708,7 @@ footer {
 
 .gallery img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   background: var(--panel);
   transition: transform 220ms ease, filter 220ms ease;
@@ -732,6 +736,8 @@ body.modal-open {
 }
 
 .image-modal img {
+  width: auto;
+  height: auto;
   max-width: min(1100px, 94vw);
   max-height: 88vh;
   object-fit: contain;
@@ -843,6 +849,7 @@ body.modal-open {
 
 .contact-band img {
   width: min(380px, 100%);
+  height: auto;
   justify-self: center;
   padding: 50px;
 }
@@ -863,6 +870,7 @@ body.modal-open {
 }
 
 .product-image-button {
+  aspect-ratio: 1;
   padding: 0;
   border: 0;
   background: #eee;
@@ -872,6 +880,7 @@ body.modal-open {
 
 .product-images img {
   width: 100%;
+  height: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   background: #eee;
@@ -903,6 +912,8 @@ body.modal-open {
 }
 
 .product-modal-figure img {
+  width: auto;
+  height: auto;
   max-width: min(920px, 88vw);
   max-height: 82vh;
 }
@@ -931,6 +942,7 @@ footer {
 
 .footer-logo {
   width: 120px;
+  height: auto;
 }
 
 footer a {
