@@ -1,0 +1,23 @@
+# Vida Le Ando
+
+> Sitio oficial de Vida Le Ando, un espacio de folklore en movimiento con danza teatro, talleres, penas y tienda vidalera.
+
+## Secciones principales
+
+- [Inicio](https://vidaleando.com.ar/)
+- [Danza Teatro](https://vidaleando.com.ar/danza-teatro)
+- [Talleres](https://vidaleando.com.ar/talleres)
+- [Pena de Amigxs](https://vidaleando.com.ar/pena-de-amigxs)
+- [Tienda Vidalera](https://vidaleando.com.ar/tienda)
+
+## Obras
+
+- [Nati](https://vidaleando.com.ar/nati)
+- [La Pausa](https://vidaleando.com.ar/la-pausa)
+- [Anonimas](https://vidaleando.com.ar/anonimas)
+- [Anonimas Segunda Funcion](https://vidaleando.com.ar/anonimas-segunda-funcion)
+
+## Archivos publicos
+
+- [Sitemap](https://vidaleando.com.ar/sitemap.xml)
+- [Robots](https://vidaleando.com.ar/robots.txt)

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { asset } from '../utils/assets'
+import { imageAttrs } from '../utils/imageMeta'
 
 export function Hero({ title, eyebrow, copy, media, video }) {
   const slides = Array.isArray(media) ? media : media ? [media] : []
@@ -73,7 +74,9 @@ export function Hero({ title, eyebrow, copy, media, video }) {
                 src={asset(item)}
                 alt=""
                 decoding="async"
+                loading={index === 0 ? 'eager' : 'lazy'}
                 fetchPriority={index === 0 ? 'high' : 'auto'}
+                {...imageAttrs(item)}
               />
             )
           })}

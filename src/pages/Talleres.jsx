@@ -29,8 +29,8 @@ export function Talleres() {
             <span>Modalidad Presencial</span>
             <strong>Duración: {duration}</strong>
             <div className="actions">
-              <a className="button" href={asset(pdf)} target="_blank">Descargá ficha</a>
-              <a className="button ghost" href={socials.danzaWa2} target="_blank">Contacto</a>
+              <a className="button" href={asset(pdf)} target="_blank" rel="noopener noreferrer">Descargá ficha</a>
+              <a className="button ghost" href={socials.danzaWa2} target="_blank" rel="noopener noreferrer">Contacto</a>
             </div>
           </article>
         ))}

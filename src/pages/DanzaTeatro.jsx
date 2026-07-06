@@ -2,8 +2,16 @@ import React from 'react'
 import { Hero } from '../components/Hero'
 import { danzaWorks } from '../data/siteData'
 import { asset } from '../utils/assets'
+import { imageAttrs } from '../utils/imageMeta'
 
 export function DanzaTeatro({ go }) {
+  const openWork = (event, href) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault()
+      go(href)
+    }
+  }
+
   return (
     <>
       <Hero
@@ -23,8 +31,8 @@ export function DanzaTeatro({ go }) {
       </section>
       <section className="work-grid">
         {danzaWorks.map(([title, subtitle, image, href]) => (
-          <article className="work-card" key={href} onClick={() => go(href)}>
-            <img src={asset(image)} alt={title} />
+          <article className="work-card" key={href} onClick={() => go(href)} onKeyDown={(event) => openWork(event, href)} role="button" tabIndex={0}>
+            <img src={asset(image)} alt={title} loading="lazy" decoding="async" {...imageAttrs(image)} />
             <div>
               <p>{subtitle}</p>
               <h2>{title}</h2>

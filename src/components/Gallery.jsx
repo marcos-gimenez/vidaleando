@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { asset } from '../utils/assets'
+import { imageAttrs } from '../utils/imageMeta'
 
 export function Gallery({ title, media }) {
   const [selectedIndex, setSelectedIndex] = useState(null)
@@ -34,8 +35,8 @@ export function Gallery({ title, media }) {
       <h2>{title}</h2>
       <div className="gallery">
         {media.map((item, index) => (
-          <button className="gallery-item" key={item} onClick={() => setSelectedIndex(index)} aria-label="Ampliar imagen">
-            <img src={asset(item)} alt="" loading="lazy" decoding="async" />
+          <button className="gallery-item" key={item} onClick={() => setSelectedIndex(index)} aria-label={`Ampliar imagen ${index + 1} de ${title}`}>
+            <img src={asset(item)} alt={`${title} ${index + 1}`} loading="lazy" decoding="async" {...imageAttrs(item)} />
           </button>
         ))}
       </div>
@@ -45,7 +46,7 @@ export function Gallery({ title, media }) {
           {hasManyImages && (
             <button className="modal-arrow modal-arrow-prev" onClick={(event) => { event.stopPropagation(); showPrevious() }} aria-label="Imagen anterior">‹</button>
           )}
-          <img src={asset(selectedImage)} alt="" decoding="async" onClick={(event) => event.stopPropagation()} />
+          <img src={asset(selectedImage)} alt={`${title} ${selectedIndex + 1}`} decoding="async" {...imageAttrs(selectedImage)} onClick={(event) => event.stopPropagation()} />
           {hasManyImages && (
             <button className="modal-arrow modal-arrow-next" onClick={(event) => { event.stopPropagation(); showNext() }} aria-label="Imagen siguiente">›</button>
           )}

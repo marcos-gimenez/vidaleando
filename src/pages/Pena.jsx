@@ -2,6 +2,7 @@ import React from 'react'
 import { Hero } from '../components/Hero'
 import { penaEditions, socials } from '../data/siteData'
 import { asset } from '../utils/assets'
+import { imageAttrs } from '../utils/imageMeta'
 
 const getYoutubeEmbedUrl = (url) => {
   if (!url) return ''
@@ -55,12 +56,12 @@ export function Pena() {
         ))}
       </section>
       <section className="contact-band">
-        <img src={asset('2025/12/02-768x768-1.png')} alt="Peña de Amigxs" />
+        <img src={asset('2025/12/02-768x768-1.png')} alt="Peña de Amigxs" loading="lazy" decoding="async" {...imageAttrs('2025/12/02-768x768-1.png')} />
         <div>
           <h2>Contactá a la Peña</h2>
           <p>Consultas, reservas, talleres y presentaciones.</p>
-          <a className="button" href={socials.penaWa} target="_blank">WhatsApp</a>
-          <a className="button ghost" href={socials.penaIg} target="_blank">Instagram</a>
+          <a className="button" href={socials.penaWa} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a className="button ghost" href={socials.penaIg} target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </section>
     </>
