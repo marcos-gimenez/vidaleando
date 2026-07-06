@@ -11,8 +11,8 @@ export const nav = [
 export const socials = {
   danzaWa: 'https://wa.me/5493364193864',
   danzaWa2: 'https://wa.me/5493364355524',
-  penaWa: 'https://wa.me/5492477419212',
-  danzaIg: 'https://www.instagram.com/vidaleando',
+  penaWa: 'https://wa.me/5493364298572',
+  danzaIg: 'https://www.instagram.com/vida_leando',
   penaIg: 'https://www.instagram.com/cantinadeamigxs'
 }
 
