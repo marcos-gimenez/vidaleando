@@ -2,6 +2,7 @@
   --amaranta-black: #050505;
   --amaranta-wine: #651421;
   --amaranta-red: #8f1d2c;
+  --amaranta-red-text: #cf5b69;
   --amaranta-ivory: #e8e3db;
   --amaranta-warm: #b8b1a8;
   --amaranta-line: rgba(232, 227, 219, 0.17);
@@ -318,7 +319,7 @@
 
 .amaranta-central h2 span:first-child {
   margin-bottom: 12px;
-  color: var(--amaranta-red);
+  color: var(--amaranta-red-text);
 }
 
 .amaranta-central > p {
@@ -467,7 +468,7 @@
 
 .amaranta-ticket-label {
   margin-bottom: 14px;
-  color: var(--amaranta-red);
+  color: var(--amaranta-red-text);
 }
 
 .amaranta-prices {
@@ -535,7 +536,7 @@
 
 .amaranta-credits h3 {
   margin: 0;
-  color: var(--amaranta-red);
+  color: var(--amaranta-red-text);
   font-size: clamp(0.78rem, 1vw, 0.9rem);
   letter-spacing: 0.18em;
 }
