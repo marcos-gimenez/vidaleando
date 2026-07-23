@@ -1,4 +1,5 @@
 import React from 'react'
+import { AmarantaShareButton } from './AmarantaShareButton'
 
 export function AmarantaHero({ data, onTickets }) {
   return (
@@ -24,6 +25,7 @@ export function AmarantaHero({ data, onTickets }) {
         </div>
         <div className="amaranta-actions">
           <button className="amaranta-primary-action" onClick={onTickets}>{data.hero.action}</button>
+          <AmarantaShareButton />
         </div>
       </div>
     </section>
