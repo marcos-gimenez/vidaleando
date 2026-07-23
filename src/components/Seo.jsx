@@ -54,9 +54,30 @@ export function Seo({ path }) {
     if (image) {
       setMeta('meta[property="og:image"]', 'content', image)
       setMeta('meta[name="twitter:image"]', 'content', image)
+      if (seo.imageWidth) {
+        setMeta('meta[property="og:image:width"]', 'content', seo.imageWidth)
+      } else {
+        removeMeta('meta[property="og:image:width"]')
+      }
+      if (seo.imageHeight) {
+        setMeta('meta[property="og:image:height"]', 'content', seo.imageHeight)
+      } else {
+        removeMeta('meta[property="og:image:height"]')
+      }
+      if (seo.imageAlt) {
+        setMeta('meta[property="og:image:alt"]', 'content', seo.imageAlt)
+        setMeta('meta[name="twitter:image:alt"]', 'content', seo.imageAlt)
+      } else {
+        removeMeta('meta[property="og:image:alt"]')
+        removeMeta('meta[name="twitter:image:alt"]')
+      }
     } else {
       removeMeta('meta[property="og:image"]')
+      removeMeta('meta[property="og:image:width"]')
+      removeMeta('meta[property="og:image:height"]')
+      removeMeta('meta[property="og:image:alt"]')
       removeMeta('meta[name="twitter:image"]')
+      removeMeta('meta[name="twitter:image:alt"]')
     }
     setLink('canonical', canonical)
   }, [path])

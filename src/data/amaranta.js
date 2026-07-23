@@ -83,7 +83,9 @@ export const amaranta = {
     ogTitle: 'Amaranta — Lo que no se marchita',
     ogDescription: 'Un homenaje a todas las formas de amar.',
     ogType: 'website',
-    // TODO: completar cuando exista /public/assets/amaranta/amaranta-og-1200x630.webp.
-    image: null
+    image: '/assets/amaranta/amaranta-og-1200x630.webp',
+    imageWidth: 1200,
+    imageHeight: 630,
+    imageAlt: 'Amaranta, obra de danza-teatro de Vidaleando'
   }
 }

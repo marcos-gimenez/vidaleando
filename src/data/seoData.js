@@ -16,7 +16,10 @@ export const seoByPath = {
     ogDescription: amaranta.seo.ogDescription,
     type: amaranta.seo.ogType,
     canonical: amaranta.canonical,
-    image: amaranta.seo.image
+    image: amaranta.seo.image,
+    imageWidth: amaranta.seo.imageWidth,
+    imageHeight: amaranta.seo.imageHeight,
+    imageAlt: amaranta.seo.imageAlt
   },
   '/amaranta': {
     title: amaranta.seo.title,
@@ -25,7 +28,10 @@ export const seoByPath = {
     ogDescription: amaranta.seo.ogDescription,
     type: amaranta.seo.ogType,
     canonical: amaranta.canonical,
-    image: amaranta.seo.image
+    image: amaranta.seo.image,
+    imageWidth: amaranta.seo.imageWidth,
+    imageHeight: amaranta.seo.imageHeight,
+    imageAlt: amaranta.seo.imageAlt
   },
   '/': {
     title: 'Vida Le Ando | Folklore en Movimiento',
