@@ -39,11 +39,11 @@ export const amaranta = {
       dateTime: '2026-09-06T19:30:00-03:00',
       endDate: '', // TODO: completar cuando se confirme la duración.
       venue: 'Auditorio Municipal Rafael de Aguiar',
-      time: '19:30 HS',
+      time: '20 HS',
       advancePrice: '$15.000',
       doorPrice: '$20.000',
       city: 'San Nicolás de los Arroyos',
-      address: 'De la Nación 346',
+      address: 'Maipú 22',
       region: 'Buenos Aires',
       postalCode: '2900',
       country: 'AR',

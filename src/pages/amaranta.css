@@ -113,7 +113,7 @@
   padding: 7px 0;
   color: var(--amaranta-warm);
   border-bottom: 1px solid transparent;
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -252,7 +252,7 @@
   flex-direction: column;
   color: var(--amaranta-ivory);
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-size: clamp(1.2rem, 1.4vw, 1.2rem);
   line-height: 1.36;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
 }
@@ -327,7 +327,7 @@
   margin: 0 auto;
   color: var(--amaranta-warm);
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-size: clamp(1.2rem, 1.4vw, 1.2rem);
 }
 
 .amaranta-thread {
@@ -537,7 +537,7 @@
 .amaranta-credits h3 {
   margin: 0;
   color: var(--amaranta-red-text);
-  font-size: clamp(0.78rem, 1vw, 0.9rem);
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
   letter-spacing: 0.18em;
 }
 
@@ -547,7 +547,7 @@
   flex-direction: column;
   font-family: 'Cormorant Garamond', Georgia, serif;
   min-width: 0;
-  font-size: clamp(1rem, 1.8vw, 1.65rem);
+  font-size: clamp(1.3rem, 1.8vw, 1.65rem);
   line-height: 1.35;
 }
 
