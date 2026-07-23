@@ -1,3 +1,5 @@
+import { amaranta, AMARANTA_ROUTE } from './amaranta'
+
 export const siteUrl = 'https://vidaleando.com.ar'
 
 export const defaultSeo = {
@@ -7,6 +9,24 @@ export const defaultSeo = {
 }
 
 export const seoByPath = {
+  [AMARANTA_ROUTE]: {
+    title: amaranta.seo.title,
+    description: amaranta.seo.description,
+    ogTitle: amaranta.seo.ogTitle,
+    ogDescription: amaranta.seo.ogDescription,
+    type: amaranta.seo.ogType,
+    canonical: amaranta.canonical,
+    image: amaranta.seo.image
+  },
+  '/amaranta': {
+    title: amaranta.seo.title,
+    description: amaranta.seo.description,
+    ogTitle: amaranta.seo.ogTitle,
+    ogDescription: amaranta.seo.ogDescription,
+    type: amaranta.seo.ogType,
+    canonical: amaranta.canonical,
+    image: amaranta.seo.image
+  },
   '/': {
     title: 'Vida Le Ando | Folklore en Movimiento',
     description: 'Arte, memoria y cuerpo: danza teatro, talleres folklóricos, peñas y tienda vidalera.',

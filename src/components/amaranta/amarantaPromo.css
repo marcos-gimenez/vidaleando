@@ -1,0 +1,75 @@
+.amaranta-promo {
+  position: relative;
+  overflow: hidden;
+  width: min(1180px, calc(100% - 36px));
+  margin: clamp(56px, 8vw, 112px) auto;
+  padding: clamp(30px, 6vw, 72px);
+  color: #e8e3db;
+  background: #080606;
+  border: 1px solid rgba(143, 29, 44, 0.55);
+  isolation: isolate;
+}
+
+.amaranta-promo::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -40% auto -40% 66%;
+  width: 1px;
+  background: #8f1d2c;
+  transform: rotate(18deg);
+  box-shadow: 0 0 80px 22px rgba(143, 29, 44, 0.15);
+}
+
+.amaranta-promo p,
+.amaranta-promo span {
+  margin: 0;
+  color: #b8b1a8;
+  font-size: clamp(0.68rem, 1vw, 0.78rem);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.amaranta-promo h2 {
+  max-width: 100%;
+  margin: 14px 0 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.8rem, 8vw, 6.5rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 0.78;
+  text-transform: uppercase;
+}
+
+.amaranta-promo em {
+  display: block;
+  margin: 14px 0 30px;
+  color: #b8b1a8;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+}
+
+.amaranta-promo .amaranta-primary-action {
+  margin-top: 34px;
+}
+
+.amaranta-promo-home {
+  margin-top: clamp(20px, 4vw, 48px);
+}
+
+@media (max-width: 420px) {
+  .amaranta-promo {
+    width: calc(100% - 28px);
+    padding: 28px 22px;
+  }
+
+  .amaranta-promo p,
+  .amaranta-promo span {
+    letter-spacing: 0.14em;
+  }
+
+  .amaranta-promo .amaranta-primary-action {
+    width: 100%;
+  }
+}

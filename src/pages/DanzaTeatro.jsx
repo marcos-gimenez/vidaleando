@@ -1,4 +1,5 @@
 import React from 'react'
+import { AmarantaPromo } from '../components/amaranta/AmarantaPromo'
 import { Hero } from '../components/Hero'
 import { danzaWorks } from '../data/siteData'
 import { asset } from '../utils/assets'
@@ -29,6 +30,7 @@ export function DanzaTeatro({ go }) {
         <p>Tejemos escenarios con el pulso del FOLKLORE VIVO, con la nostalgia de la vidala y la urgencia de un presente que respira, que VIVE.</p>
         <p>Danza y teatro se conjugan en nuestro andar. VIDA LE ANDO es andar amando, bailar habitando, decimos con el cuerpo lo que el ALMA nos recuerda y nos volvemos ronda, encuentro, ritual, obras.</p>
       </section>
+      <AmarantaPromo go={go} context="danza" />
       <section className="work-grid">
         {danzaWorks.map(([title, subtitle, image, href]) => (
           <article className="work-card" key={href} onClick={() => go(href)} onKeyDown={(event) => openWork(event, href)} role="button" tabIndex={0}>

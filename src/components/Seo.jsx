@@ -31,21 +31,33 @@ const setLink = (rel, href) => {
   element.setAttribute('href', href)
 }
 
+const removeMeta = (selector) => {
+  document.head.querySelector(selector)?.remove()
+}
+
 export function Seo({ path }) {
   useEffect(() => {
     const seo = seoByPath[path] || defaultSeo
-    const canonical = `${siteUrl}${path === '/' ? '/' : path}`
-    const image = absoluteUrl(seo.image || defaultSeo.image)
+    const canonical = seo.canonical || `${siteUrl}${path === '/' ? '/' : path}`
+    const image = seo.image === null ? '' : absoluteUrl(seo.image || defaultSeo.image)
+    const socialTitle = seo.ogTitle || seo.title
+    const socialDescription = seo.ogDescription || seo.description
 
     document.title = seo.title
     setMeta('meta[name="description"]', 'content', seo.description)
-    setMeta('meta[property="og:title"]', 'content', seo.title)
-    setMeta('meta[property="og:description"]', 'content', seo.description)
+    setMeta('meta[property="og:title"]', 'content', socialTitle)
+    setMeta('meta[property="og:description"]', 'content', socialDescription)
+    setMeta('meta[property="og:type"]', 'content', seo.type || 'website')
     setMeta('meta[property="og:url"]', 'content', canonical)
-    setMeta('meta[property="og:image"]', 'content', image)
-    setMeta('meta[name="twitter:title"]', 'content', seo.title)
-    setMeta('meta[name="twitter:description"]', 'content', seo.description)
-    setMeta('meta[name="twitter:image"]', 'content', image)
+    setMeta('meta[name="twitter:title"]', 'content', socialTitle)
+    setMeta('meta[name="twitter:description"]', 'content', socialDescription)
+    if (image) {
+      setMeta('meta[property="og:image"]', 'content', image)
+      setMeta('meta[name="twitter:image"]', 'content', image)
+    } else {
+      removeMeta('meta[property="og:image"]')
+      removeMeta('meta[name="twitter:image"]')
+    }
     setLink('canonical', canonical)
   }, [path])
 

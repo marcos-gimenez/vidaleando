@@ -1,4 +1,5 @@
 import React from 'react'
+import { AmarantaPromo } from '../components/amaranta/AmarantaPromo'
 import { Feature } from '../components/Feature'
 import { Hero } from '../components/Hero'
 import { homeFeatures, socials } from '../data/siteData'
@@ -22,6 +23,7 @@ export function Home({ go }) {
       <section className="intro narrow">
         <p>Este espacio reúne todo lo que hacemos desde la danza, la música y la cultura.</p>
       </section>
+      <AmarantaPromo go={go} context="home" />
       <section className="feature-grid">
         {homeFeatures.map((feature) => (
           <Feature key={feature.href} {...feature} go={go} />
