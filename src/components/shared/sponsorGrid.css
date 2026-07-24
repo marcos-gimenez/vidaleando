@@ -1,0 +1,99 @@
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(10px, 2.5vw, 22px);
+}
+
+.sponsor-card {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-width: 0;
+  height: clamp(300px, 24vw, 300px);
+  overflow: hidden;
+  padding: clamp(14px, 2.5vw, 20px);
+  color: #e8e3db;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(232, 227, 219, 0.045);
+  border: 1px solid rgba(232, 227, 219, 0.16);
+  border-radius: 0;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.sponsor-card__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: clamp(8px, 1vw, 16px);
+}
+
+.sponsor-card__logo-wrapper img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.sponsor-card__name {
+  margin-top: 12px;
+  color: #b8b1a8;
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.sponsor-card:hover {
+  background: rgba(143, 29, 44, 0.13);
+  border-color: rgba(207, 91, 105, 0.65);
+  transform: translateY(-2px);
+}
+
+.sponsor-card:focus-visible {
+  outline: 2px solid #e8e3db;
+  outline-offset: 4px;
+}
+
+.sponsor-grid--compact {
+  gap: clamp(8px, 2vw, 16px);
+}
+
+.sponsor-grid--compact .sponsor-card {
+  grid-template-rows: minmax(0, 1fr);
+  height: clamp(160px, 20vw, 184px);
+  padding: clamp(6px, 1vw, 10px);
+}
+
+.sponsor-grid--compact .sponsor-card__logo-wrapper {
+  padding: clamp(4px, 0.8vw, 7px);
+}
+
+@media (min-width: 680px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-card {
+    transition-duration: 0.01ms;
+  }
+
+  .sponsor-card:hover {
+    transform: none;
+  }
+}

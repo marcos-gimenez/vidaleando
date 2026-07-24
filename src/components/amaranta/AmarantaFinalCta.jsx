@@ -1,7 +1,7 @@
 import React from 'react'
 import { trackAmaranta } from './amarantaTracking'
 
-export function AmarantaFinalCta({ whatsapp, title, subtitle }) {
+export function AmarantaFinalCta({ whatsapp, title, subtitle, children }) {
   const message = encodeURIComponent('Hola, quiero reservar entradas para Amaranta.')
   return (
     <section className="amaranta-final" aria-labelledby="amaranta-final-title">
@@ -20,6 +20,7 @@ export function AmarantaFinalCta({ whatsapp, title, subtitle }) {
           RESERVAR ENTRADAS
         </a>
       </div>
+      {children}
       <p className="amaranta-final-company">COMPAÑÍA DE DANZA-TEATRO<br />VIDA LE ANDO</p>
       <a className="amaranta-back-link" href="/" onClick={() => trackAmaranta('click_back_vidaleando', 'footer')}>Volver a Vidaleando</a>
     </section>

@@ -1,7 +1,9 @@
 import React from 'react'
 import { AmarantaPromo } from '../components/amaranta/AmarantaPromo'
+import { AmarantaSponsorSection } from '../components/amaranta/AmarantaSponsorSection'
 import { Feature } from '../components/Feature'
 import { Hero } from '../components/Hero'
+import { amarantaSponsors } from '../data/amarantaSponsors'
 import { homeFeatures, socials } from '../data/siteData'
 import { asset } from '../utils/assets'
 import { imageAttrs } from '../utils/imageMeta'
@@ -24,6 +26,12 @@ export function Home({ go }) {
         <p>Este espacio reúne todo lo que hacemos desde la danza, la música y la cultura.</p>
       </section>
       <AmarantaPromo go={go} context="home" />
+      <AmarantaSponsorSection
+        sponsors={amarantaSponsors}
+        variant="compact"
+        location="home"
+        onNavigate={go}
+      />
       <section className="feature-grid">
         {homeFeatures.map((feature) => (
           <Feature key={feature.href} {...feature} go={go} />

@@ -1,0 +1,217 @@
+.sponsor-modal-backdrop {
+  position: fixed;
+  z-index: 3000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(16px, 3vw, 32px);
+  background: rgba(2, 2, 2, 0.88);
+  overscroll-behavior: contain;
+}
+
+.sponsor-modal {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 45%) minmax(0, 55%);
+  width: min(900px, 92vw);
+  max-height: 85vh;
+  max-height: 85dvh;
+  overflow: hidden;
+  padding: 0;
+  color: #e8e3db;
+  background: #090707;
+  border: 1px solid rgba(207, 91, 105, 0.45);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.58);
+}
+
+.sponsor-modal:focus {
+  outline: none;
+}
+
+.sponsor-modal:focus-visible {
+  outline: 2px solid #e8e3db;
+  outline-offset: -5px;
+}
+
+.sponsor-modal__close {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  color: #e8e3db;
+  font: inherit;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  background: rgba(5, 5, 5, 0.82);
+  border: 1px solid rgba(232, 227, 219, 0.28);
+}
+
+.sponsor-modal__close:hover {
+  color: #fff;
+  border-color: #cf5b69;
+}
+
+.sponsor-modal__close:focus-visible,
+.sponsor-modal__link:focus-visible {
+  outline: 2px solid #e8e3db;
+  outline-offset: 3px;
+}
+
+.sponsor-modal__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  min-height: min(55vw, calc(85dvh - 2px), 560px);
+  padding: clamp(16px, 2vw, 24px);
+  background: rgba(232, 227, 219, 0.05);
+  border-right: 1px solid rgba(232, 227, 219, 0.12);
+}
+
+.sponsor-modal__logo-wrapper img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 72vh;
+  max-height: 72dvh;
+  object-fit: contain;
+  object-position: center;
+}
+
+.sponsor-modal__content {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  max-height: 85vh;
+  max-height: 85dvh;
+  flex-direction: column;
+  justify-content: safe center;
+  overflow-y: auto;
+  margin: 0;
+  padding: clamp(44px, 5vw, 66px) clamp(32px, 5vw, 58px);
+  scrollbar-color: rgba(207, 91, 105, 0.65) transparent;
+  scrollbar-width: thin;
+}
+
+.sponsor-modal__content h2 {
+  margin: 0;
+  color: #e8e3db;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.sponsor-modal__description {
+  margin: 16px 0 0;
+  color: #b8b1a8;
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  line-height: 1.7;
+}
+
+.sponsor-modal__details {
+  display: grid;
+  gap: 16px;
+  margin: 22px 0 0;
+}
+
+.sponsor-modal__details div {
+  display: grid;
+  gap: 4px;
+}
+
+.sponsor-modal__details dt {
+  color: #cf5b69;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.sponsor-modal__details dd {
+  margin: 0;
+  color: #e8e3db;
+  line-height: 1.55;
+}
+
+.sponsor-modal__link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  padding: 12px 22px;
+  color: #f8f4ee;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #8f1d2c;
+  border: 1px solid #a93242;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.sponsor-modal__link:hover {
+  background: #651421;
+  border-color: #cf5b69;
+}
+
+@media (max-width: 719px) {
+  .sponsor-modal-backdrop {
+    align-items: center;
+    padding: 14px;
+    overflow-y: auto;
+  }
+
+  .sponsor-modal {
+    display: block;
+    width: min(100%, 560px);
+    max-height: calc(100dvh - 28px);
+    overflow-y: auto;
+  }
+
+  .sponsor-modal__logo-wrapper {
+    min-height: clamp(220px, 70vw, 360px);
+    padding: clamp(28px, 9vw, 48px);
+    border-right: 0;
+    border-bottom: 1px solid rgba(232, 227, 219, 0.12);
+  }
+
+  .sponsor-modal__logo-wrapper img {
+    max-height: min(52dvh, 320px);
+  }
+
+  .sponsor-modal__content {
+    display: block;
+    max-height: none;
+    overflow: visible;
+    padding: 30px 22px 28px;
+  }
+
+  .sponsor-modal__content h2 {
+    padding-right: 38px;
+  }
+
+  .sponsor-modal__link {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-modal__link {
+    transition-duration: 0.01ms;
+  }
+}

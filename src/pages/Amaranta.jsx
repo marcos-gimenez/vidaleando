@@ -6,8 +6,10 @@ import { AmarantaHero } from '../components/amaranta/AmarantaHero'
 import { AmarantaManifesto } from '../components/amaranta/AmarantaManifesto'
 import { AmarantaSchema } from '../components/amaranta/AmarantaSchema'
 import { AmarantaShows } from '../components/amaranta/AmarantaShows'
+import { AmarantaSponsorSection } from '../components/amaranta/AmarantaSponsorSection'
 import { AmarantaTeam } from '../components/amaranta/AmarantaTeam'
 import { amaranta } from '../data/amaranta'
+import { amarantaSponsors } from '../data/amarantaSponsors'
 import '../components/amaranta/amarantaButton.css'
 import './amaranta.css'
 
@@ -33,7 +35,9 @@ export function Amaranta() {
       <AmarantaGallery gallery={amaranta.gallery} />
       <AmarantaShows shows={amaranta.shows} whatsapp={amaranta.contact.whatsapp} />
       <AmarantaTeam team={amaranta.team} />
-      <AmarantaFinalCta title={amaranta.title} subtitle={amaranta.subtitle} whatsapp={amaranta.contact.whatsapp} />
+      <AmarantaFinalCta title={amaranta.title} subtitle={amaranta.subtitle} whatsapp={amaranta.contact.whatsapp}>
+        <AmarantaSponsorSection sponsors={amarantaSponsors} variant="full" location="landing" />
+      </AmarantaFinalCta>
     </div>
   )
 }
