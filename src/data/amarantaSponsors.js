@@ -76,4 +76,14 @@ export const amarantaSponsors = [
     width: 1080,
     height: 1080,
   },
+  {
+    id: "la-casa-del-parabrisas",
+    name: "La Casa del Parabrisas",
+    logo: "/assets/amaranta/sponsors/07-la-casa-del-parabrisas.webp",
+    url: "",
+    level: "adherente",
+    active: true,
+    width: 1080,
+    height: 1080,
+  },
 ];
