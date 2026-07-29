@@ -86,4 +86,14 @@ export const amarantaSponsors = [
     width: 1080,
     height: 1080,
   },
+  {
+    id: "triunfo-seguros",
+    name: "Raúl Digrazia - Productor de Seguros",
+    logo: "/assets/amaranta/sponsors/08-raul-digrazia.webp",
+    url: "",
+    level: "adherente",
+    active: true,
+    width: 1080,
+    height: 1080,
+  },
 ];
