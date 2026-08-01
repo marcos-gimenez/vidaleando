@@ -96,4 +96,14 @@ export const amarantaSponsors = [
     width: 1080,
     height: 1080,
   },
+  {
+    id: "la-juntada",
+    name: "La Juntada",
+    logo: "/assets/amaranta/sponsors/09-la-juntada.webp",
+    url: "",
+    level: "adherente",
+    active: true,
+    width: 1080,
+    height: 1080,
+  },
 ];
