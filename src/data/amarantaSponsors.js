@@ -106,4 +106,14 @@ export const amarantaSponsors = [
     width: 1080,
     height: 1080,
   },
+  {
+    id: "cosmica",
+    name: "Cósmica - Mercado Mágico",
+    logo: "/assets/amaranta/sponsors/10-cosmica.webp",
+    url: "",
+    level: "adherente",
+    active: true,
+    width: 1080,
+    height: 1080,
+  },
 ];
