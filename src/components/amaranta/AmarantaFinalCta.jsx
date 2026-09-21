@@ -13,8 +13,8 @@ export function AmarantaFinalCta({ whatsapp, title, subtitle, children }) {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
-            trackAmaranta('click_ticket', 'cta_final', '2026-09-06')
-            trackAmaranta('click_whatsapp', 'cta_final', '2026-09-06')
+            trackAmaranta('click_ticket', 'cta_final', '2026-10-04')
+            trackAmaranta('click_whatsapp', 'cta_final', '2026-10-04')
           }}
         >
           RESERVAR ENTRADAS

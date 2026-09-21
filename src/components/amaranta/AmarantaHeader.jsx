@@ -100,8 +100,8 @@ export function AmarantaHeader({ bookingUrl, whatsapp, onNavigate }) {
   }
   const trackTickets = () => {
     setOpen(false)
-    trackAmaranta('click_ticket', 'header', '2026-09-06')
-    if (!bookingUrl) trackAmaranta('click_whatsapp', 'header', '2026-09-06')
+    trackAmaranta('click_ticket', 'header', '2026-10-04')
+    if (!bookingUrl) trackAmaranta('click_whatsapp', 'header', '2026-10-04')
   }
 
   const visibilityClass = hidden ? 'amaranta-header--hidden' : 'amaranta-header--visible'

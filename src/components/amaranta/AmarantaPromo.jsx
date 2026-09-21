@@ -14,7 +14,7 @@ export function AmarantaPromo({ go, context = 'danza' }) {
       <p>PRÓXIMO ESTRENO · 2026</p>
       <h2 id={`amaranta-promo-title-${context}`}>{amaranta.title}</h2>
       <em>{amaranta.subtitle}</em>
-      <span>6 de septiembre · 10 de octubre </span>
+      <span>4 de Octubre </span>
       <a className="amaranta-primary-action" href={AMARANTA_ROUTE} onClick={navigate}>DESCUBRIR AMARANTA</a>
     </aside>
   )

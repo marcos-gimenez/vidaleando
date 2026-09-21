@@ -33,13 +33,13 @@ export const amaranta = {
   },
   shows: [
     {
-      id: '2026-09-06',
-      dateLabel: '6 DE SEPTIEMBRE DE 2026',
-      shortDate: '6 DE SEPTIEMBRE',
-      dateTime: '2026-09-06T19:30:00-03:00',
+      id: '2026-10-04',
+      dateLabel: '4 DE OCTUBRE DE 2026',
+      shortDate: '4 DE OCTUBRE',
+      dateTime: '2026-10-04T19:30:00-03:00',
       endDate: '', // TODO: completar cuando se confirme la duración.
       venue: 'Auditorio Municipal Rafael de Aguiar',
-      time: '20 HS',
+      time: '19:30 HS',
       advancePrice: '$15.000',
       doorPrice: '$20.000',
       city: 'San Nicolás de los Arroyos',
@@ -52,9 +52,9 @@ export const amaranta = {
       bookingUrl: '' // TODO: completar si la reserva no utiliza el WhatsApp general.
     },
     {
-      id: '2026-10-10',
-      dateLabel: '10 DE OCTUBRE DE 2026',
-      shortDate: '10 DE OCTUBRE',
+      id: '2026-11-10',
+      dateLabel: 'NOVIEMBRE',
+      shortDate: '',
       dateTime: '', // TODO: completar horario y zona horaria.
       endDate: '',
       venue: '', // TODO: completar lugar.
